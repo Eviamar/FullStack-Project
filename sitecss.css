@@ -1,0 +1,11 @@
+textarea{
+    resize: none;
+}
+
+table{
+    border: 3px solid black;
+}
+
+tr,td{
+    border: 1px solid black;
+}
