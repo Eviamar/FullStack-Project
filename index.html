@@ -4,64 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identify Yourself</title>
     <link rel="stylesheet" href="sitecss.css">
-    <script src="conversions.js"></script>
-    <title>Converter</title>
+    <script src="identify.js"></script>    
+    <ul class="mynav">
+        <li>
+            <a href="">login</a>      
+        </li>
+    </ul>
 </head>
 <body>
-    <input id="convertme"  oninput="ExectuteAll()">
-    <!-- 
+    <br><br><br><br><br><br>
+<div align="center">
+        <label for="username">Username:</label><br>
+        <input type="text" id="uname"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="pswd"><br><br>
+        <button onclick="Check()">Submit</button>
         
-    <br>
-    <button onclick="DecimalToBinary()">Decimal To Binary</button>
-    <button onclick="BinaryToDecimal()">Binary To Decimal</button>
-    <button onclick="DecimalToOctal()">Decimal To Octal</button>
-    <button onclick="BinaryToOctal()">Binary To Octal</button>
-    <button onclick="OctalToDecimal()">Octal To Decimal</button>
-    <button onclick="OctalToBinary()">Octal To Binary</button>
-    <button onclick="DecimalToHexadecimal()">Decimal To Hexadecimal</button>
-    <button onclick="BinaryToHexadecimal()">Binary To Hexadecimal</button>
-    <br>
-    <textarea id="res"></textarea>
--->
-    <table>
-        <tr>
-            <td>Decimal To Binary</td>
-            <td>    <textarea id="DecimalToBinary" readonly></textarea>     </td>
-        </tr>
-        <tr>
-            <td>Binary To Decimal</td>
-            <td>    <textarea id="BinaryToDecimal" readonly></textarea>   </td>
-        </tr>
-        <tr>
-            <td>Decimal To Octal</td>
-            <td>    <textarea id="DecimalToOctal" readonly></textarea>    </td>
-        </tr>
-        <tr>
-            <td>Binary To Octal</td>
-            <td>    <textarea id="BinaryToOctal" readonly></textarea> </td>
-        </tr>
-        <tr>
-            <td>Octal To Binary</td>
-            <td>    <textarea id="OctalToBinary" readonly></textarea>     </td>
-        </tr>
-        <tr>
-            <td>Octal To Decimal</td>
-            <td>    <textarea id="OctalToDecimal" readonly></textarea>     </td>
-        </tr>
-        <tr>
-            <td>Decimal To Hexadecimal</td>
-            <td>    <textarea id="DecimalToHexadecimal" readonly></textarea>  </td>
-        </tr>
-        <tr>
-            <td>Binary To Hexadecimal</td>
-            <td>     <textarea id="BinaryToHexadecimal" readonly></textarea>  </td>
-        </tr>
-    </table>
-    
-    
-    
-    
-   
+
+</div>
+
 </body>
 </html>

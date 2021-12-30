@@ -5,17 +5,19 @@ function DecimalToBinary()
     a = parseInt(document.getElementById('convertme').value);
     while(a>0) 
     {
+        
         if(a%2==0)
         c = 0;
         else
         c = 1;
         res = res+c;
         a = Math.floor(a/2);      
+       
     }
     var splitString = res.split("");
     var reverse = splitString.reverse("");
     var join = reverse.join("");
-    document.getElementById('DecimalToBinary').innerHTML=join;
+    document.getElementById('DecimalToBinary').innerHTML=join;   
 }
 
 function BinaryToDecimal()
@@ -23,16 +25,31 @@ function BinaryToDecimal()
     let a;
     var res = 0;
     a = document.getElementById('convertme').value;
+    //!check if value contain other digit than 0 or 1
+    flag = true;
+    let i=0;
+    var SplitToCheck = a.toString().split("");
+    while(i<SplitToCheck.length)
+    {
+        if(SplitToCheck[i]!=1 && SplitToCheck[i]!=0 )
+        {
+            document.getElementById("BinaryToDecimal").style.backgroundColor = "salmon";
+            flag = false;
+            break;
+        }
+        else
+        document.getElementById("BinaryToDecimal").style.backgroundColor = "white";
+        i++;
+    }
+    //*starts working on string first, splitting it, second, reverse to work on the number from the bottom to top just as we learnt in class from Yulia
     var num = a.split("");
     var reverse = num.reverse("");
-     for(i=0; i<reverse.length;i++)
+     for(i=0; i<reverse.length && flag == true;i++)
     {
        res = res + (reverse[i]*Math.pow(2,i));
     }
     document.getElementById('BinaryToDecimal').innerHTML=res;
 
-    
-    
 }
 
 function DecimalToOctal()
@@ -60,17 +77,40 @@ function BinaryToOctal()
     let a;
     var res = 0;
     a = document.getElementById('convertme').value;
+
+
+    //!check if not 0 or 1
+    flag = true;
+    let i=0;
+    var SplitToCheck = a.toString().split("");
+    while(i<SplitToCheck.length)
+    {
+        if(SplitToCheck[i]!=1 && SplitToCheck[i]!=0 )
+        {
+            document.getElementById("BinaryToOctal").style.backgroundColor = "salmon";
+            flag = false;
+            break;
+        }
+        else
+        document.getElementById("BinaryToOctal").style.backgroundColor = "white";
+        i++;
+    }
+
+
+
+
+
     //binary to decimal
     var num = a.split("");
     var reverse = num.reverse("");
-     for(i=0; i<reverse.length;i++)
+     for(i=0; i<reverse.length && flag ==true;i++)
     {
        res = res + (reverse[i]*Math.pow(2,i));
     }
     //decimal to octal
     a = parseInt(res);
     res = "";
-    while(a>0) 
+    while(a>0 && flag == true) 
     {
             res = res+a%8;
             a = Math.floor(a/8);
@@ -171,6 +211,30 @@ function BinaryToHexadecimal()
     let a;
     var res = 0;
     a = document.getElementById('convertme').value;
+
+
+
+    //! check if not 0 or 1
+    flag = true;
+    let i=0;
+    var SplitToCheck = a.toString().split("");
+    while(i<SplitToCheck.length)
+    {
+        if(SplitToCheck[i]!=1 && SplitToCheck[i]!=0 )
+        {
+            document.getElementById("BinaryToHexadecimal").style.backgroundColor = "salmon";
+            flag = false;
+            break;
+        }
+        else
+        document.getElementById("BinaryToHexadecimal").style.backgroundColor = "white";
+        i++;
+    }
+
+
+
+
+
     var num = a.split("");
     var reverse = num.reverse("");
      for(i=0; i<reverse.length;i++)
@@ -180,7 +244,7 @@ function BinaryToHexadecimal()
     a = parseInt(res);
     res = "";
     //decimal to hexadecimal
-    while(a>0) 
+    while(a>0 && flag == true) 
     {
         if(a%16==10)
         res = res+"A";
