@@ -1,13 +1,53 @@
+body {
+  background-color: black;
+}
 ul {
   list-style-type: none;
   margin: 5;
   padding: 0;
-  background-color: white;
+  background-color: purple;
   position: fixed;
   top: 0;
   width: 99%;
   border: 1px solid black;
   box-shadow: 0px 0px 10px darkblue;
+  animation: mynavbarbackground 1s infinite;
+}
+a {
+  animation: mytitlelink 1s infinite;
+}
+
+@keyframes mytitlelink {
+  25% {
+    color: white;
+  }
+  50% {
+    color: cyan;
+  }
+  75% {
+    color: hotpink;
+  }
+  100% {
+    color: blueviolet;
+  }
+}
+@keyframes mynavbarbackground {
+  25% {
+    background-color: purple;
+    color: white;
+  }
+  50% {
+    background-color: darkpink;
+    color: cyan;
+  }
+  75% {
+    background-color: blue;
+    color: hotpink;
+  }
+  100% {
+    background-color: darkblue;
+    color: blueviolet;
+  }
 }
 
 li {
@@ -19,6 +59,7 @@ li a {
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
+  animation: mynavbarbackground 1s infinite;
 }
 
 li a:hover {
@@ -50,7 +91,6 @@ h1 {
   animation-name: title;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  text-decoration: underline;
   text-shadow: 0px 0px 10px darkblue;
 }
 
@@ -100,8 +140,9 @@ img.picpage:hover {
 pre {
   border: 1px solid black;
   width: 20%;
-  box-shadow: 2px 2px 4px darkblue;
+  box-shadow: 0px 2px 1px darkblue;
   padding: 10px;
+  animation: mynavbarbackground 1s infinite;
 }
 
 ol.secondnav {
@@ -109,6 +150,7 @@ ol.secondnav {
   background-color: white;
   border: 1px solid black;
   box-shadow: 0px 0px 10px darkblue;
+  animation: mynavbarbackground 1s infinite;
 }
 
 li.tndlist {
@@ -122,4 +164,10 @@ li.tndlist a:hover {
   color: darkblue;
   opacity: 0.8;
   transition: 0.5s;
+}
+#playme {
+  color: white;
+  animation-name: mytitlelink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }

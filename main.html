@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="sitecss.css">
+    <script src="music.js"></script>
+    <link rel="stylesheet" href="sitecss.css" id="stylesheet">
 </head>
-<body>
+<body id="bodyy">
 
     <ul class="mynav">
         <li>
-        <a href="main.html">Home</a>
+        <a href="main.html" style="background-color: darkblue; color: white;">Home</a>
         </li>
         <li>
             <a href="convert.html">Base Convert</a>
@@ -33,6 +34,49 @@
         </li>
            </ul>
            <br><br><br><br>
-    <h1>Home</h1>
+    <h1 id="maintitle">Home</h1>
+    <div style="position: fixed;" id="sndnav">
+        
+        <ol class="secondnav">
+            <li class="tndlist"><u>Links for TCB</u></li>
+            <li class="tndlist"><a href="https://moodle.tcb.ac.il/auth/rashim/index.php" target="_blank">Moodle</a></li>
+            <li class="tndlist"><a href="https://michlol.tcb.ac.il/Portals/Student/login" target="_blank">Michlol</a></li>
+            <li class="tndlist">sd</li>
+        </ol>
+
+    </div>
+    <div align="center">
+        <h3>Welcome to my Project</h3>
+     
+        <pre style="text-align: left;">
+My name is Evyatar and this is my Project.
+
+You'll find in my site the following pages:
+•Base convert
+•Simple Calculator
+•Pictures
+•Exam
+        </pre>     
+        <audio controls onplay="setTimeout(Music,59000); document.getElementById('playme').innerHTML=''"> <!--59000-->         
+            <source src="music/Miami Nights 1984 - Accelerated.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        <!--
+            <iframe width="20%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/188380421&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/miami-nights-1984" title="MIAMI NIGHTS 1984" target="_blank" style="color: #cccccc; text-decoration: none;">MIAMI NIGHTS 1984</a> · <a href="https://soundcloud.com/miami-nights-1984/accelerated" title="Accelerated" target="_blank" style="color: #cccccc; text-decoration: none;" >Accelerated</a></div>    </div>
+        -->
+        
+            <div align="center">               
+            <img id="dancer" class="musicpic" hidden>
+            <img id="vodka" class="musicpic" hidden>
+            <img id="guitar" class="musicpic" hidden>
+            <br>
+            <span id="playme">play me and wait for it!</span>
+        </div>
+        <div style="position: absolute; top: 200px; left: 0px;" align="left">
+            <marquee direction="down" behavior="alternate" height="500px" scrollamount="20"><img src="pics/igor.jpg" style="border: 1px solid cyan; border-radius: 50px;" id="igor" hidden></marquee>
+        </div>
+        <div style="position: absolute; top:200px; right: 0px;" style="float: right;" align="right">
+            <marquee direction="up" behavior="alternate" height="500px" scrollamount="20"><img src="pics/yulia.jpg" style="border: 1px solid cyan; border-radius: 50px;" id="yulia" hidden></marquee>
+        </div>
 </body>
 </html>

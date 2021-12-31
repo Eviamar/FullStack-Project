@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitecss.css">
-    <title>Hobbies</title>
+    <title>Game</title>
+<script src="gamejs.js"></script>
 </head>
 <body>
     <ul class="mynav">
@@ -22,7 +23,7 @@
             <a href="pictures.html">Pictures</a>
         </li>
         <li>
-            <a href="hobbies.html">Hobbies</a>
+            <a href="hobbies.html" style="background-color: darkblue; color: white;">Hobbies</a>
         </li>
         <li>
             <a href="exam.html">Exam</a>
@@ -33,6 +34,44 @@
            </ul>
 
            <br><br><br><br>
-    <h1>Hobbies</h1>
+    <h1>Who wants to be a millionaire</h1>
+           <div align="center">
+               <pre style="width: fit-content; text-align: left;">
+<b><u>Rules:</b></u> 
+1.You have to answer X questions, you need to answer them all to win or go home with nothing
+2.You have 3 lives, on third you lose, game over.
+Good luck! 
+<button onclick="Game()">Start</button>
+               </pre>
+           <table>
+               <th colspan="2" id="question">Question</th>
+               <tr>
+                   <td>
+                    <input type="radio" id="answer1" name="question" value="answer1">
+                       <label for="answer1" id="ans1">1.</label>
+                    </td>
+                   <td>
+                    <input type="radio" id="answer2" name="question" value="answer2">
+                       <label for="answer2" id="ans2">2.</label>
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input type="radio" id="answer3" name="question" value="answer3">
+                    <label for="answer3" id="ans3">3.</label>
+                </td>
+                <td>
+                    <input type="radio" id="answer4" name="question" value="answer4">
+                    <label for="answer4" id="ans4">4.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Lives:<span id="lives">3</span></td>
+                <td>Money:<span id="prize">0</span></td>
+            </tr>
+           </table>
+        </div>
+        
+
 </body>
 </html>
