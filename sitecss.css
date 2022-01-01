@@ -24,7 +24,42 @@ div.mynav {
   background-color: darkblue;
   color: white;
   opacity: 0.8;
-  transition: 0.5s;
+  transition: 1s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 /*
 ul {
@@ -109,14 +144,18 @@ li.tndlist a {
   text-align: center;
   padding: 3px;
   margin: 0px;
-  text-decoration: none;
   display: block;
 }
 li.tndlist a:hover {
-  background-color: rgb(0, 174, 255);
-  color: darkblue;
-  opacity: 0.8;
-  transition: 0.5s;
+  color: darkcyan;
+  transition: 0.3s;
+  animation: shake 1s infinite;
+}
+
+#listtitle {
+  text-decoration: underline;
+  font-size: 110%;
+  font-family: cursive;
 }
 
 table {
@@ -194,10 +233,11 @@ img.musicpic {
 }
 
 pre {
+  width: fit-content;
   border: 1px solid black;
-  width: 20%;
   box-shadow: 2px 2px 4px darkblue;
   padding: 10px;
+  font-family: cursive;
 }
 
 /* width */
