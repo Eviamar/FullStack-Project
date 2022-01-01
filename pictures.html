@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitecss.css">
+    <script src="picjs.js"></script>
     <title>Pictures</title>
 </head>
 <body>
+    <div class="mynav">
+        <a href="main.html">Home</a>
+        <a href="convert.html">Base Convert</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="pictures.html" style="background-color: darkblue; color: white;">Pictures</a>
+        <a href="game.html">Game</a>
+        <a href="exam.html">Exam</a>
+        <a href="about.html" style="float: right;">About</a>
+    </div>
+    <!-- 
     <ul class="mynav">
         <li>
         <a href="main.html">Home</a>
@@ -31,15 +42,16 @@
             <a href="about.html" >About</a>
         </li>
            </ul>
-
+        -->
            <br><br><br><br>
     <h1>Pictures</h1>
     <br>
     <div align="center">
-    <img src="pics/putsu1.jpg" class="picpage">
-    <img src="pics/putsu2.jpg" class="picpage">
-    <img src="pics/putsu3.jpg" class="picpage">
+    <img src="pics/putsu1.jpg" class="picpage" onclick="DisplayTrueSize(this);">
+    <img src="pics/putsu2.jpg" class="picpage" onclick="DisplayTrueSize(this);">
+    <img src="pics/putsu3.jpg" class="picpage" onclick="DisplayTrueSize(this);">
         <br>
+    <img id="displayfullsize" hidden>
 </div>
 </body>
 </html>

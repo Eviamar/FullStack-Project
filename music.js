@@ -11,8 +11,6 @@ function Music()
 }
 function Guitar()
 {
-    document.getElementById("vodka").hidden = false;
-    document.getElementById("vodka").src="pics/vodka.gif";
     document.getElementById("guitar").hidden = false;
     document.getElementById("guitar").src="pics/rockoutguitar.gif";
     setTimeout(GuitarGoHome,30000);
@@ -25,6 +23,9 @@ function GuitarGoHome()
 }
 function GuitarComesBack()
 {
+    document.getElementById("vodka").hidden = false;
+    document.getElementById("vodka").src="pics/vodka.gif";
+    document.getElementById("guitar").hidden = false;
     document.getElementById("yulia").hidden = false;
     document.getElementById("igor").hidden = false;
     document.getElementById("guitar").hidden = false;

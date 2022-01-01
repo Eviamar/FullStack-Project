@@ -1,3 +1,32 @@
+div.mynav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px darkblue;
+  overflow: hidden;
+  font-size: 125%;
+}
+
+.mynav a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.mynav a:hover {
+  background-color: darkblue;
+  color: white;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+/*
 ul {
   list-style-type: none;
   margin: 5;
@@ -8,6 +37,7 @@ ul {
   width: 99%;
   border: 1px solid black;
   box-shadow: 0px 0px 10px darkblue;
+  overflow: hidden;
 }
 
 li {
@@ -24,6 +54,68 @@ li a {
 li a:hover {
   background-color: darkblue;
   color: white;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+
+
+li.tndlist {
+  float: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+li.tndlist a:hover {
+  background-color: rgb(0, 174, 255);
+  color: darkblue;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+ol.secondnav {
+  position: fixed;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px darkblue;
+}
+li a {
+  width: fit-content;
+  float: left;
+}
+
+*/
+ol.secondnav {
+  top: 20%;
+  margin: auto;
+  padding: 0px;
+  position: fixed;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px darkblue;
+  font-size: 125%;
+}
+
+li.tndlist {
+  float: none;
+  padding: 3px;
+  margin: 0%;
+}
+
+li.tndlist a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 3px;
+  margin: 0px;
+  text-decoration: none;
+  display: block;
+}
+li.tndlist a:hover {
+  background-color: rgb(0, 174, 255);
+  color: darkblue;
   opacity: 0.8;
   transition: 0.5s;
 }
@@ -46,7 +138,6 @@ h1 {
   text-align: center;
   font-size: 50px;
   color: black;
-  position: relative;
   animation-name: title;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -78,23 +169,29 @@ h1 {
 }
 
 img.picpage {
-  width: 350px;
-  height: 350px;
-  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
   opacity: 0.5;
   border: 1px solid black;
-  margin: 80px;
+  margin: 0.3%;
 }
+#displayfullsize {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 2%;
+}
+img.picpage:hover {
+  opacity: 1;
+  transition: 0.5s;
+  /*transform: scale(1.25);*/
+}
+
 img.musicpic {
   width: 350px;
   height: 350px;
   margin: 10px;
-}
-
-img.picpage:hover {
-  opacity: 1;
-  transition: 0.5s;
-  transform: scale(1.5);
 }
 
 pre {
@@ -102,24 +199,4 @@ pre {
   width: 20%;
   box-shadow: 2px 2px 4px darkblue;
   padding: 10px;
-}
-
-ol.secondnav {
-  list-style-type: none;
-  background-color: white;
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px darkblue;
-}
-
-li.tndlist {
-  float: none;
-  padding: 0%;
-  margin: 0%;
-}
-
-li.tndlist a:hover {
-  background-color: rgb(0, 174, 255);
-  color: darkblue;
-  opacity: 0.8;
-  transition: 0.5s;
 }
