@@ -2,7 +2,6 @@ function Music()
 {
     document.getElementById("stylesheet").href="musiccss.css";
     document.getElementById("dancer").hidden = false;
-    document.getElementById("sndnav").hidden = true;
     document.getElementById("dancer").src="pics/dancer.gif";
     document.getElementById("maintitle").innerHTML="<a href='https://youtu.be/rDBbaGCCIhk' target='_blank'>Miami Nights 1984 - Accelerated</a>";
     document.getElementById('playme').hidden = false;
