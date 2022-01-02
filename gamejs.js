@@ -41,7 +41,7 @@ function Level3()
 function Level4()
 {
     document.getElementById("question").innerHTML=i+". Micheal Khersonsky likes to say...";
-    document.getElementById("ans1").innerHTML="1. You are a bad at CSharp";
+    document.getElementById("ans1").innerHTML="1. You bad at CSharp";
     document.getElementById("ans2").innerHTML="2. The more lines in your program the better";
     document.getElementById("ans3").innerHTML="3. Micheal doesn't say, he Console.WriteLine()";
     document.getElementById("ans4").innerHTML="4. There is a good weather outside today";   
