@@ -20,7 +20,7 @@ function Level2()
 {
     document.getElementById("question").innerHTML=i+". ASCII stands for?";
     document.getElementById("ans1").innerHTML="1. Arial Soft Code for Intelligent Information";
-    document.getElementById("ans2").innerHTML="2. American Standard Code for Information Interchange.you";
+    document.getElementById("ans2").innerHTML="2. American Standard Code for Information Interchange";
     document.getElementById("ans3").innerHTML="3. American Super Code for Information Irrelevant";
     document.getElementById("ans4").innerHTML="4. American Sandwich Croissant for Internet Ideas ";   
     document.getElementById("lives").innerHTML=lives;
@@ -30,10 +30,10 @@ function Level2()
 function Level3()
 {
     document.getElementById("question").innerHTML=i+". How much does it cost to buy coffee + bakery in Manza?";
-    document.getElementById("ans1").innerHTML="1. 15";
-    document.getElementById("ans2").innerHTML="2. 8";
-    document.getElementById("ans3").innerHTML="3. 10";
-    document.getElementById("ans4").innerHTML="4. 5";   
+    document.getElementById("ans1").innerHTML="1. ₪15";
+    document.getElementById("ans2").innerHTML="2. ₪8";
+    document.getElementById("ans3").innerHTML="3. ₪10";
+    document.getElementById("ans4").innerHTML="4. ₪5";   
     document.getElementById("lives").innerHTML=lives;
     document.getElementById("prize").innerHTML=money;
     
