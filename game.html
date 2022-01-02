@@ -46,14 +46,15 @@
     -->
 
            <br><br><br><br>
-    <h1>Who wants to be a millionaire</h1>
+    <h1>Game on</h1>
            <div align="center">
                <pre style="width: fit-content; text-align: left;">
 <b><u>Rules:</b></u> 
-1.You have to answer X questions, you need to answer them all to win or go home with nothing
-2.You have 3 lives, on third you lose, game over.
+1.You have to answer 4 questions, you need to answer them all to win or go home with nothing.
+2.Each question is worth $1000.
+3.You have 2 lives, upon reaching 0 lives game is over!
 Good luck! 
-<button onclick="Game()">Start</button>
+<button onclick="Level1()">Start</button>
                </pre>
            <table>
                <th colspan="2" id="question">Question</th>
@@ -78,8 +79,11 @@ Good luck!
                 </td>
             </tr>
             <tr>
-                <td>Lives:<span id="lives">3</span></td>
+                <td>Lives:<span id="lives">0</span></td>
                 <td>Money:<span id="prize">0</span></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="gametag" hidden ><button onclick="Next()" >Next</button></td>
             </tr>
            </table>
         </div>
