@@ -5,8 +5,13 @@ div.mynav {
   width: 99%;
   border: 1px solid black;
   box-shadow: 0px 0px 10px darkblue;
-  overflow: hidden;
   font-size: 125%;
+  background: url("pics/navbg.jpg");
+}
+#currentpage {
+  pointer-events: none;
+  background-color: darkblue;
+  color: white;
 }
 
 .mynav a {
@@ -21,10 +26,20 @@ div.mynav {
 }
 
 .mynav a:hover {
-  background-color: darkblue;
-  color: white;
+  border-radius: 30% 60% 30% 60%;
+  background-image: url("pics/navbg.jpg");
+  display: block;
   opacity: 0.8;
   transition: 1s;
+  animation: navhover 1s infinite;
+}
+@keyframes navhover {
+  from {
+    color: cyan;
+  }
+  to {
+    color: darkblue;
+  }
 }
 @keyframes shake {
   0% {
@@ -260,4 +275,19 @@ pre {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: blue;
+}
+
+button.calcbtn {
+  border: 1px solid darkblue;
+  background-color: cadetblue;
+  color: white;
+  font-size: 125%;
+}
+button.calcbtn:hover {
+  background-color: darkblue;
+  color: white;
+}
+button.calcbtn:active {
+  background-color: cyan;
+  color: black;
 }

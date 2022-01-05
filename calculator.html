@@ -12,39 +12,15 @@
     <div class="mynav">
         <a href="main.html" >Home</a>
         <a href="convert.html">Base Convert</a>
-        <a href="calculator.html" style="background-color: darkblue; color: white;">Calculator</a>
+        <a href="calculator.html" id="currentpage">Calculator</a>
         <a href="pictures.html">Pictures</a>
         <a href="game.html">Game</a>
         <a href="exam.html">Exam</a>
         <a href="about.html" style="float: right;">About</a>
     </div>
-    <!-- 
-    <ul class="mynav">
-        <li>
-        <a href="main.html">Home</a>
-        </li>
-        <li>
-            <a href="convert.html">Base Convert</a>
-        </li>
-        <li>
-            <a href="calculator.html" style="background-color: darkblue; color: white;">Calculator</a>
-        </li>
-        <li>
-            <a href="pictures.html">Pictures</a>
-        </li>
-        <li>
-            <a href="hobbies.html">Hobbies</a>
-        </li>
-        <li>
-            <a href="exam.html">Exam</a>
-        </li>
-        <li style="float:right">
-            <a href="about.html" >About</a>
-        </li>
-           </ul>
-        -->
 <br><br><br><br>
 <h1>Calculator</h1>
+<!--
 <table align="center">
     <tr>
         <td>First Number:</td>
@@ -66,40 +42,49 @@
     </tr>
 </table>
 
+-->
 
 
 
-<!--
-           <table>
+           <table align="center">
                <tr>
-                   <td colspan="4"><textarea id="res" readonly></textarea></td>
+                   <td colspan="4"><textarea id="calcinput"></textarea></td>
                </tr>
                <tr>
-                   <td><button id="num7" value="7" onclick="document.getElementById('res').innerHTML+=this.value">7</button></td>
-                   <td><button id="num8" value="8" onclick="document.getElementById('res').innerHTML+=this.value">8</button></td>
-                   <td><button id="num9" value="9" onclick="document.getElementById('res').innerHTML+=this.value">9</button></td>
-                   <td><button id="divbtn" value="/" onclick="document.getElementById('res').innerHTML+=this.value">/</button></td>
+                   <td colspan="4"><textarea id="rslt" style="width:auto;" readonly></textarea></td>
+               </tr>
+               <tr>
+                   
+                   <td><button id="num7" value="7" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">7</button></td>
+                   <td><button id="num8" value="8" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">8</button></td>
+                   <td><button id="num9" value="9" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">9</button></td>
+                   <td><button id="divbtn" value="/" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">/</button></td>
+                
                 </tr>
                 <tr>
-                    <td><button id="num4" value="4" onclick="document.getElementById('res').innerHTML+=this.value">4</button></td>
-                   <td><button id="num5" value="5" onclick="document.getElementById('res').innerHTML+=this.value">5</button></td>
-                   <td><button id="num6" value="6" onclick="document.getElementById('res').innerHTML+=this.value">6</button></td>
-                   <td><button id="multbtn" value="*" onclick="document.getElementById('res').innerHTML+=this.value">*</button></td>
+                    <td><button id="num4" value="4" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">4</button></td>
+                   <td><button id="num5" value="5" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">5</button></td>
+                   <td><button id="num6" value="6" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">6</button></td>
+                   <td><button id="multbtn" value="*" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">*</button></td>
                  </tr>
                  <tr>
-                    <td><button id="num1" value="1" onclick="document.getElementById('res').innerHTML+=this.value">1</button></td>
-                   <td><button id="num2" value="2" onclick="document.getElementById('res').innerHTML+=this.value">2</button></td>
-                   <td><button id="num3" value="3" onclick="document.getElementById('res').innerHTML+=this.value">3</button></td>
-                   <td><button id="subbtn" value="-" onclick="document.getElementById('res').innerHTML+=this.value">-</button></td>
+                    <td><button id="num1" value="1" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">1</button></td>
+                   <td><button id="num2" value="2" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">2</button></td>
+                   <td><button id="num3" value="3" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">3</button></td>
+                   <td><button id="subbtn" value="-" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">-</button></td>
                  </tr>
                  <tr>
-                     <td colspan="3"><button id="num0" value="0" onclick="document.getElementById('res').innerHTML+=this.value">0</button></td>
-                     <td><button id="addbtn" value="+" onclick="document.getElementById('res').innerHTML+=this.value">+</button></td>
+                     <td ><button id="num0" value="0" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">0</button></td>
+                     <td ><button id="sym(" value="(" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">(</button></td>
+                     <td ><button id="sym)" value=")" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">)</button></td>
+                     <td><button id="addbtn" value="+" onclick="document.getElementById('calcinput').innerHTML+=this.value" class="calcbtn">+</button></td>
                  </tr>
                  <tr>
-                     <td colspan="4"><button id="submit">=</button></td>
+                    <td colspan="2"><button onclick="Clear()" class="calcbtn">C</button></td>
+                     <td colspan="2"><button id="submit" onclick="Calc()" class="calcbtn">=</button ></td>
+                     
                  </tr>
            </table>
-        -->
+      
 </body>
 </html>

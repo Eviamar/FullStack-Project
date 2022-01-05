@@ -1,4 +1,4 @@
-function Calculator()
+/*function Calculator()
 {
     let firstNum = parseInt(document.getElementById("firstnum").value);
     let secondNum = parseInt(document.getElementById("secondnum").value);
@@ -47,4 +47,19 @@ function Calculator()
 
 
     
+}
+*/
+
+function Calc() {
+    let a = document.getElementById("calcinput").value;
+    let b = eval(a);
+
+    document.getElementById("rslt").innerHTML = b;
+}
+
+function Clear()
+{
+    document.getElementById("calcinput").innerHTML="";
+    document.getElementById("rslt").innerHTML="";
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en,hb" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="sitecss.css">
     <title>About</title>
 </head>
-<body>
+
+<script>
+        
+    function Age()
+    {      
+        let day = 1000*60*60*24;
+        const currentTime = new Date();
+        const birthDay = new Date(currentTime.getFullYear(),06,28);
+        const myAge = (currentTime.getFullYear() - 1991);
+        document.getElementById("myage").innerHTML=myAge-1;
+
+        if(currentTime.getMonth()==11 && currentTime > 28)
+        birthDay.setFullYear(birthDay.setFullYear()+1);
+
+        let res = Math.round(birthDay.getTime()-currentTime.getTime()) / (day);
+        let countDown = res.toFixed(0);
+
+        document.getElementById("countdown").innerHTML=countDown;
+        
+    }
+   
+
+</script>
+<body onload="Age()">
 
     <div class="mynav">
         <a href="main.html" >Home</a>
@@ -16,37 +39,21 @@
         <a href="pictures.html">Pictures</a>
         <a href="game.html" >Game</a>
         <a href="exam.html">Exam</a>
-        <a href="about.html" style="float: right; background-color: darkblue; color: white;">About</a>
+        <a href="about.html" style="float: right;" id="currentpage">About</a>
     </div>
-    <!--
 
-
-        <ul class="mynav">
-            <li>
-            <a href="main.html">Home</a>
-            </li>
-            <li>
-                <a href="convert.html">Base Convert</a>
-            </li>
-            <li>
-                <a href="calculator.html">Calculator</a>
-            </li>
-            <li>
-                <a href="pictures.html">Pictures</a>
-            </li>
-            <li>
-                <a href="hobbies.html">Hobbies</a>
-            </li>
-            <li>
-                <a href="exam.html">Exam</a>
-            </li>
-            <li style="float:right">
-                <a href="about.html" style="background-color: darkblue; color: white;" >About</a>
-            </li>
-               </ul>
-    -->
-
+   
            <br><br><br><br>
     <h1>About</h1>
+    
+    <div align="center">
+    <pre style="text-align: right; width: fit-content;" >
+קוראים לי אביתר ואני בן 30
+נולדתי בתאריך 28/7/1991 - יש לי עוד <span id="countdown"></span> ימים ליום הולדת
+אני מתגורר בדימונה.
+
+    </pre>
+</div>
+
 </body>
 </html>
