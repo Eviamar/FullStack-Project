@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitecss.css">
-    <title>Exam</title>
+    <title>The Fifth Element</title>
     <script src="clock.js"></script>
-</head>
-<body onload="startTime()" style="background-image: url('pics/tfebgjfif.jpg'); background-repeat: no-repeat; background-size: cover;">
-    <div class="mynav">
+    <!--
+    <script>
+        function Multipass(){
+            let audio = new Audio('music/Multipass.mp3')
+            audio.play();
+            
+        } 
+    </script>-->
+   
+   <video autoplay loop id="myVideo">
+    <source src="video/DivaShow.mp4" type="video/mp4">
+  </video>
+
+        <div class="mynav">
         <a href="main.html" >Home</a>
         <a href="convert.html">Base Convert</a>
         <a href="calculator.html">Calculator</a>
@@ -19,14 +30,23 @@
         <a href="about.html" style="float: right;">About</a>
         <a href="#" style="float: right; background: none;" id="currentpage"><span id="myclock"></span></a>
     </div>
+  
+    
+</head>
+<body onload="startTime(),Multipass()" style="background-image: url('pics/tfebgjfif.jpg'); background-repeat: no-repeat; background-size: cover;" id="moviebd">
+    
  
-    <h1>My #1 movie</h1>
+    <h1 class="movie">My #1 movie</h1>
     <div id="page-container">
-        <div id="content-wrap" align="center">
-            <table style="text-align:left;" id="movietable">
+        <div id="content-wrap" align="left">
+            <table style="text-align:left; position: relative;" id="movietable">
                 <tr>
                     <th>Title:</th>
                     <td id="movietitle">The fifth element</td>
+                </tr>
+                <tr>
+                    <th>Release date:</th>
+                    <td>1997</td>
                 </tr>
                 <tr>
                     <th>Rating: </th>
@@ -49,19 +69,10 @@
                 </tr>
                 <tr>
                     <th>Extras:</th>
-                    <td align="center"><img id="movieimg" src="pics/multipass.gif"><br><img id="movieimg" src="pics/quinto-bzzz.gif"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/XRIrg-bAU-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                    <td align="center"><img id="movieimg" src="pics/multipass.gif"><br><img id="movieimg" src="pics/quinto-bzzz.gif"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/XRIrg-bAU-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/0DrUi8I40aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
                 </tr>
                 </table>
-
-
-
-          
-
-
-
-
-            
-            
         </div>
         <footer style="color: white;">© 2022 Evyatar Amar All Rights Reserved</footer>
     </div>

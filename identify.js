@@ -2,10 +2,10 @@ function Check()
 {
     let username = document.getElementById("uname").value;
     let password = document.getElementById("pswd").value;
-    let users = ["Evyatar","Yulia","Igor","mel"];
-    let passwords = ["12345","258456","159753","mel"]
+    let users = ["Evyatar","Yulia","Igor"];
+    let passwords = ["12345","258456","159753"]
     flag = false;
-    for(i=0; i<4;i++)
+    for(i=0; i<3;i++)
     if(username == users[i] && password == passwords[i])
     {
         flag = true;
@@ -13,5 +13,6 @@ function Check()
     }
     
     if(flag == false)
-    alert("Wrong user or password")
+        alert("Wrong user or password")
+    
 }
