@@ -124,7 +124,12 @@ tr,
 td {
   border: 1px solid black;
 }
-
+th {
+  border: 1px solid black;
+}
+#movieimg {
+  width: 100%;
+}
 textarea {
   resize: none;
 }
@@ -254,4 +259,10 @@ footer {
 }
 #content-wrap {
   padding-bottom: 2.5rem; /* Footer height */
+}
+#movietable {
+  background-color: white;
+  opacity: 1;
+  color: black;
+  border: 3px solid cyan;
 }
