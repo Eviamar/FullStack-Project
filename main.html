@@ -7,8 +7,9 @@
     <title>Main Page</title>
     <script src="music.js"></script>
     <link rel="stylesheet" href="sitecss.css" id="stylesheet">
+    <script src="clock.js"></script>
 </head>
-<body id="bodyy">
+<body id="bodyy" onload="startTime()">
     <div class="mynav">
         <a href="main.html" id="currentpage">Home</a>
         <a href="convert.html">Base Convert</a>
@@ -17,33 +18,10 @@
         <a href="game.html">Game</a>
         <a href="exam.html">Exam</a>
         <a href="about.html" style="float: right;">About</a>
+        <a href="#" style="float: right; background: none;" id="currentpage"><span id="myclock"></span></a>
     </div>
-<!-- 
-    <ul class="mynav">
-        <li>
-        <a href="main.html" style="background-color: darkblue; color: white;">Home</a>
-        </li>
-        <li>
-            <a href="convert.html">Base Convert</a>
-        </li>
-        <li>
-            <a href="calculator.html">Calculator</a>
-        </li>
-        <li>
-            <a href="pictures.html">Pictures</a>
-        </li>
-        <li>
-            <a href="hobbies.html">Hobbies</a>
-        </li>
-        <li>
-            <a href="exam.html">Exam</a>
-        </li>
-        <li style="float:right">
-            <a href="about.html" >About</a>
-        </li>
-           </ul>
-           -->
-           <br><br><br><br>
+
+    
     <h1 id="maintitle" align="center">Home</h1>    
         <ol class="secondnav" id="secondnav">
             <li class="tndlist" id="listtitle">Links for TCB</li>
@@ -51,18 +29,18 @@
             <li class="tndlist"><a href="https://michlol.tcb.ac.il/Portals/Student/login" target="_blank">Michlol</a></li>        
         </ol> 
     <div align="center">
-        <h3>Welcome to my Project</h3>
+        
+        <h3>ברוכים הבאים לפרוייקט שלי</h3>
      
-        <pre style="text-align: left; width: fit-content;" >
-My name is Evyatar and this is my Project.
+        <pre style="text-align: right; width: fit-content;"dir="rtl">
+אתם תמצאו באתר את הדברים הבאים:
+♦המרה בין בסיסים
+♦מחשבון
+♦תמונות
+♦משחק
+♦# - under constructions
+♦קצת עליי 
 
-You'll find in my site the following pages:
-•Base convert
-•Simple Calculator
-•Pictures
-•Game - under constructions
-•Exam - under constructions
-•About - under constructions
         </pre>     
 
                                              <!--59000-->      
@@ -84,12 +62,9 @@ You'll find in my site the following pages:
         <div style="position: absolute; top:200px; right: 0px;" style="float: right;" align="right">
             <marquee direction="up" behavior="alternate" height="500px" scrollamount="20"><img src="pics/yulia.jpg" style="border: 1px solid cyan; border-radius: 50px;" id="yulia" hidden></marquee>
         </div>
-
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
+    
+    
+    
 </body>
+<footer id="footer"> © 2022 Evyatar Amar All Rights Reserved</footer>
 </html>

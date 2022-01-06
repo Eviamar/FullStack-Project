@@ -6,31 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sitecss.css">
     <title>About</title>
+    <script src="clock.js"></script>
 </head>
 
 <script>
         
     function Age()
     {      
-        let day = 1000*60*60*24;
-        const currentTime = new Date();
-        const birthDay = new Date(currentTime.getFullYear(),06,28);
-        const myAge = (currentTime.getFullYear() - 1991);
-        document.getElementById("myage").innerHTML=myAge-1;
+        const birthDay = new Date(1991,07,28);
+        let todayDate = new Date();
+        let todayDay = todayDate.getDate();
+        let todayMonth = todayDate.getMonth();
+        let todayYear = todayDate.getFullYear();
+        
+        var age = 0;
+        if(todayMonth>=birthDay.getMonth())
+        age= todayYear-birthDay.getFullYear();
+        else if(todayMonth==birthDay.getMonth())
+        {
+            if(todayDay>= birthDay.getDate())
+            age = todayYear-birthDay.getFullYear();
+            else
+            age = todayYear - birthDay.getFullYear()-1;
+        }
+        else
+        age = todayYear - birthDay.getFullYear()-1;
 
-        if(currentTime.getMonth()==11 && currentTime > 28)
-        birthDay.setFullYear(birthDay.setFullYear()+1);
-
-        let res = Math.round(birthDay.getTime()-currentTime.getTime()) / (day);
-        let countDown = res.toFixed(0);
-
-        document.getElementById("countdown").innerHTML=countDown;
+        document.getElementById("age").innerHTML=age;
+        document.getElementById("dob").innerHTML=birthDay.getDate()+"/"+birthDay.getMonth()+"/"+birthDay.getFullYear();
         
     }
    
 
 </script>
-<body onload="Age()">
+
+<body onload="startTime(),Age()">
 
     <div class="mynav">
         <a href="main.html" >Home</a>
@@ -40,20 +50,20 @@
         <a href="game.html" >Game</a>
         <a href="exam.html">Exam</a>
         <a href="about.html" style="float: right;" id="currentpage">About</a>
+        <a href="#" style="float: right; background: none;" id="currentpage"><span id="myclock"></span></a>
     </div>
 
    
-           <br><br><br><br>
     <h1>About</h1>
     
     <div align="center">
+        
     <pre style="text-align: right; width: fit-content;" >
-קוראים לי אביתר ואני בן 30
-נולדתי בתאריך 28/7/1991 - יש לי עוד <span id="countdown"></span> ימים ליום הולדת
-אני מתגורר בדימונה.
-
+קוראים לי אביתר נולדתי בתאריך <span id="dob">X</span> ואני בן <span id="age">X</span>.
+אני סטודנט להנדסאי תוכנה במכללה הטכנולוגית באר שבע.
     </pre>
 </div>
 
 </body>
+<footer>© 2022 Evyatar Amar All Rights Reserved</footer>
 </html>

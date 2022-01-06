@@ -1,25 +1,6 @@
 body {
   background-color: black;
 }
-/*
-ul {
-  list-style-type: none;
-  margin: 5;
-  padding: 0;
-  background-color: purple;
-  position: fixed;
-  top: 0;
-  width: 99%;
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px darkblue;
-  animation: mynavbarbackground 1s infinite;
-}
-a {
-  animation: mytitlelink 1s infinite;
-}
-
-
-*/
 
 div.mynav {
   background-color: white;
@@ -78,26 +59,6 @@ a.homebtn {
     color: blueviolet;
   }
 }
-/*
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  animation: mynavbarbackground 1s infinite;
-}
-
-li a:hover {
-  background-color: darkblue;
-  color: white;
-  opacity: 0.8;
-  transition: 0.5s;
-}
-*/
 
 table {
   border: 3px solid cadetblue;
@@ -112,7 +73,9 @@ td {
 textarea {
   resize: none;
 }
-
+h1 {
+  margin-top: 5%;
+}
 h1 a {
   text-align: center;
   font-size: 50px;
@@ -214,4 +177,17 @@ li.tndlist a:hover {
   animation-name: mytitlelink;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+}
+
+#footer {
+  animation-name: mytitlelink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: 2.5rem;
 }

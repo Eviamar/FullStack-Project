@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="sitecss.css">
     <script src="calc.js"></script>
     <title>Calculator</title>
+    <script src="clock.js"></script>
 </head>
-<body>
+<body onload="startTime()">
     <div class="mynav">
         <a href="main.html" >Home</a>
         <a href="convert.html">Base Convert</a>
@@ -17,33 +18,9 @@
         <a href="game.html">Game</a>
         <a href="exam.html">Exam</a>
         <a href="about.html" style="float: right;">About</a>
+        <a href="#" style="float: right; background: none;" id="currentpage"><span id="myclock"></span></a>
     </div>
-<br><br><br><br>
 <h1>Calculator</h1>
-<!--
-<table align="center">
-    <tr>
-        <td>First Number:</td>
-        <td>Second Number:</td>
-    </tr>
-    <tr>
-        <td><input type="number" id="firstnum"></td>
-        <td><input type="number" id="secondnum"></td>
-    </tr>
-    <tr>
-        <td>Operand:</td>
-        <td><input type="text" id="operand"></td>
-    </tr>
-    <tr>
-        <td colspan="2" align="center"><button onclick="Calculator()">Calculate</button></td>
-    </tr>
-    <tr>
-        <td colspan="2" align="center"><textarea id="res"></textarea></td>
-    </tr>
-</table>
-
--->
-
 
 
            <table align="center">
@@ -87,4 +64,5 @@
            </table>
       
 </body>
+<footer>© 2022 Evyatar Amar All Rights Reserved</footer>
 </html>
