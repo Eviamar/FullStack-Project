@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="sitecss.css">
     <title>The Fifth Element</title>
     <script src="clock.js"></script>
-    <!--
+
     <script>
-        function Multipass(){
-            let audio = new Audio('music/Multipass.mp3')
-            audio.play();
-            
-        } 
-    </script>-->
+        function PausePlay()
+         {
+          if(document.getElementById("myVideo").paused)
+          {
+            document.getElementById("myVideo").play();
+            document.getElementById("myBtn").innerHTML="Pause";
+          }
+          else{
+            document.getElementById("myVideo").pause();
+            document.getElementById("myBtn").innerHTML="Play";
+          }
+        }
+        </script>
    
    <video autoplay loop id="myVideo">
     <source src="video/DivaShow.mp4" type="video/mp4">
@@ -33,16 +40,20 @@
   
     
 </head>
-<body onload="startTime(),Multipass()" style="background-image: url('pics/tfebgjfif.jpg'); background-repeat: no-repeat; background-size: cover;" id="moviebd">
+
+<body onload="startTime()" style="background-image: url('pics/tfebgjfif.jpg'); background-repeat: no-repeat; background-size: cover;" id="moviebd">
     
- 
-    <h1 class="movie">My #1 movie</h1>
+ <div id="toptitle" style="position: relative;" align="center">
+     <h1 class="movie" >The Fifth Element</h1>
+     <button id="myBtn" onclick="PausePlay()">Pause</button>
+    </div>
+    
     <div id="page-container">
         <div id="content-wrap" align="left">
             <table style="text-align:left; position: relative;" id="movietable">
                 <tr>
                     <th>Title:</th>
-                    <td id="movietitle">The fifth element</td>
+                    <td id="movietitle">The fifth element </td>
                 </tr>
                 <tr>
                     <th>Release date:</th>
@@ -60,7 +71,7 @@
                 </tr>
                 <tr>
                     <th id="moviesum">Plot:</th>
-                    <td style="height: fit-content;"><textarea style="width: 99%; height: 110px" readonly>In the 23rd century, a New York City cabbie, Korben Dallas (Bruce Willis), finds the fate of the world in his hands when Leeloo (Milla Jovovich) falls into his cab. As the embodiment of the fifth element, Leeloo needs to combine with the other four to keep the approaching Great Evil from destroying the world. Together with Father Vito Cornelius (Ian Holm) and zany broadcaster Ruby Rhod (Chris Tucker), Dallas must race against time and the wicked industrialist Zorg (Gary Oldman) to save humanity.</textarea></td>
+                    <td style="height: fit-content;"><textarea style="width: 99%; height: 110px" id="movieplot" readonly>In the 23rd century, a New York City cabbie, Korben Dallas (Bruce Willis), finds the fate of the world in his hands when Leeloo (Milla Jovovich) falls into his cab. As the embodiment of the fifth element, Leeloo needs to combine with the other four to keep the approaching Great Evil from destroying the world. Together with Father Vito Cornelius (Ian Holm) and zany broadcaster Ruby Rhod (Chris Tucker), Dallas must race against time and the wicked industrialist Zorg (Gary Oldman) to save humanity.</textarea></td>
                 </tr>
                 <tr>
                     <th>Trailer:</th>
@@ -70,7 +81,7 @@
                 <tr>
                     <th>Extras:</th>
                     <td align="center"><img id="movieimg" src="pics/multipass.gif"><br><img id="movieimg" src="pics/quinto-bzzz.gif"><br><iframe width="560" height="315" src="https://www.youtube.com/embed/XRIrg-bAU-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br><iframe width="560" height="315" src="https://www.youtube.com/embed/0DrUi8I40aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        </td>
                 </tr>
                 </table>
         </div>

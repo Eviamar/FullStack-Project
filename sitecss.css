@@ -131,6 +131,11 @@ th {
 }
 #movieimg {
   width: 100%;
+  opacity: 0.5;
+}
+#movieimg:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 textarea {
   resize: none;
@@ -176,6 +181,7 @@ h1.movie {
   animation-iteration-count: infinite;
   text-decoration: underline;
   text-shadow: 0px 0px 10px red;
+  margin-bottom: 0;
 }
 
 @keyframes movietitle {
@@ -298,8 +304,9 @@ footer {
 #movietable {
   font-size: 125%;
   background: rgb(255, 255, 255, 0.7);
-  color: black;
-  border: 5px groove red;
+  color: orangered;
+  font-family: cursive;
+  border: 5px groove darkred;
   width: 10%;
 }
 
@@ -309,4 +316,36 @@ footer {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+#myBtn {
+  opacity: 0.2;
+  width: fit-content;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 10%;
+  background: darkblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: orangered;
+  color: black;
+  opacity: 0.7;
+}
+
+#movieplot {
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  font-family: cursive;
+}
+#movieplot:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+  color: orangered;
+  opacity: 1;
+  transform: scale(1.25);
 }
