@@ -11,7 +11,12 @@
             <a href="#" id="currentpage">login</a>      
     </div>
 </head>
-<body>
+<style>
+    #mycanvas{
+        border: 1px solid black;
+    }    
+    </style>
+<body onload="NotRobot()">
 
 <div align="center">
     <h1 style="text-decoration: none;">Login to proceed</h1>
@@ -19,9 +24,12 @@
         <input type="text" id="uname"><br>
         <label for="password">Password:</label><br>
         <input type="password" id="pswd"><br><br>
-        <button onclick="Check()">Login</button>
+        <canvas id="mycanvas" width="200" height="70"></canvas>
+        <br>
+        <input type="text" id="CAPTCHA">
+        <br>
+        <button onclick="Check()">Login</button><button onclick="NotRobot()">Refresh</button>
 </div>
-
 </body>
 <footer>© 2022 Evyatar Amar All Rights Reserved</footer>
 </html>
